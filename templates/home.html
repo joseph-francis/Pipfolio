@@ -3,5 +3,10 @@
 <div class="home">
     <h1>My homepage</h1>
     <p>This is a test website</p>
+    {% if something %}
+        <p>I just want to say: <em style="color: green; font-size: 2em;">{{ something }}</em>.</p>
+    {% else %}
+        <p>Hello World!</p>
+    {% endif %}
 </div>
 {% endblock %}
