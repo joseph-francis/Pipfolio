@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Index</title>
 </head>
 <body>
-
+    <p>Hello {{ greeting }}</p>
+    <form action="/hello" method="POST">
+        A Greeting: <label>
+        <input type="text" name="greet">
+        </label> <br/>
+        Your Name: <label>
+        <input type="text" name="name">
+        </label> <br/>
+        <input type="submit">
+    </form>
 </body>
 </html>
